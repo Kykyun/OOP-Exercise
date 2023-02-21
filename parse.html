@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>latihan parse</h2>
+    <p id="demo"></p>
+    <p id="student"></p>
+    <script type="text/javascript">
+        const product ='{"productID":"P001","desc":"magazine","price":13.50}'
+        const student = '{"studentID":"BCS211-048","StudentName":"khaidir", "program":"DCS","subject":["SAD","DAD","OOP"]}'
+        const obj =JSON.parse(student);//guna methode array to find it out.
+        document.getElementById("student").innerHTML ="Student name " + obj.StudentName +", student id "+ obj.studentID +", subject that he take is "+ obj.subject;
+    </script>
+</body>
+</html>
